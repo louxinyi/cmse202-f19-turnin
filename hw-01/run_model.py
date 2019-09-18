@@ -10,7 +10,7 @@ def cal_pop(num):
     init_pop = regionpop.iloc[num][1]
     each_pop = [init_pop]
     for i in range(2,18):
-        each_pop.append( each_pop[-1] * (1 + regionpop.iloc[num][i]))
+        each_pop.append( each_pop[-1] * (1 + regionpop.iloc[num][i]*0.01))
     return country, each_pop
 
 # subplot each region's population
